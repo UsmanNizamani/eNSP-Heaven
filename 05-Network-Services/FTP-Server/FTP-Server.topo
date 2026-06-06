@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="4A9EACF5-792E-4158-A1DD-05B8190914B9" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-3C-0F-E4" com_port="2000" bootmode="0" cx="377.000000" cy="66.000000" edit_left="404" edit_top="120">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="455D7545-2260-4492-8C07-25A27A6AD977" name="Client1" poe="0" model="Client" settings="-domain 0 -eth 54-89-98-64-22-75 -ipaddr 192.168.10.10 -ipmask 255.255.255.0 -gateway 192.168.10.1 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-E0-13-C4" com_port="0" bootmode="0" cx="378.000000" cy="247.000000" edit_left="405" edit_top="301">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="4A9EACF5-792E-4158-A1DD-05B8190914B9" destDeviceID="455D7545-2260-4492-8C07-25A27A6AD977">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="404.238586" srcBoundRect_Y="136.183105" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="404.761414" tarBoundRect_Y="230.816895" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="0" color="16744448" upleftcorner="248,39" width="354" height="416" startpt="0,0" endpt="0,0" borderStyle="2" borderWidth="4" />
+        <shape type="1" filloption="0" color="16744448" upleftcorner="122,99" width="0" height="0" startpt="0,0" endpt="0,0" borderStyle="2" borderWidth="4" />
+        <shape type="1" filloption="0" color="16744448" upleftcorner="577,151" width="1" height="1" startpt="0,0" endpt="0,0" borderStyle="2" borderWidth="4" />
+    </shapes>
+    <txttips>
+        <txttip left="435" top="106" right="552" bottom="123" content="192.168.10.1 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="446" top="271" right="571" bottom="288" content="192.168.10.10 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="435" top="85" right="613" bottom="102" content="FTP Server on port 2121" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="449" top="248" right="528" bottom="265" content="FTP Client" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="437" top="48" right="584" bottom="80" content="username : usman&#x0D;&#x0A;password : password" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

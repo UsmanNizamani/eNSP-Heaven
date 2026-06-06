@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="0C0BD4CE-54DA-454a-9ED9-A3AC5F3C5D5F" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-88-50-81" com_port="2000" bootmode="0" cx="71.000000" cy="220.000000" edit_left="98" edit_top="274">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+        <dev id="6CA474BE-2774-4972-84A0-2ACE762B127F" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-35-41-24" com_port="2001" bootmode="0" cx="724.000000" cy="210.000000" edit_left="751" edit_top="264">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="0C0BD4CE-54DA-454a-9ED9-A3AC5F3C5D5F" destDeviceID="6CA474BE-2774-4972-84A0-2ACE762B127F">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="141.178711" srcBoundRect_Y="246.338760" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="3" tarBoundRectIsMoved="0" tarBoundRect_X="707.821289" tarBoundRect_Y="237.661240" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="378" top="220" right="442" bottom="237" content="DLCI 100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="104" top="195" right="131" bottom="212" content="DCE" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="705" top="193" right="732" bottom="210" content="DTE" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="370" top="253" right="465" bottom="270" content="10.0.12.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="138" top="220" right="263" bottom="237" content=" ip:10.0.12.2 24 " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="564" top="220" right="689" bottom="237" content=" ip:10.0.12.1 24 " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="330" top="158" right="455" bottom="190" content="Muhammad Usman &#x0D;&#x0A;23BSCYS006" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

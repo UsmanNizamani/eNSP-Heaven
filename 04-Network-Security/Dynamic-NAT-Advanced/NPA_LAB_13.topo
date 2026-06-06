@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="AB949E43-170A-4e1e-81D0-3C6EF10D2C5C" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.10.2  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.10.1  -simpc_mac 54-89-98-A5-23-C9  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-A5-23-C9" com_port="0" bootmode="0" cx="31.000000" cy="264.000000" edit_left="57" edit_top="318">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="87782A70-1682-4f58-AA8F-486291C22B1E" name="LSW1" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-5A-5F-7E" com_port="2002" bootmode="0" cx="244.000000" cy="172.000000" edit_left="271" edit_top="226">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="137E44B2-B502-4be9-A40A-63A2C2EE6901" name="PC3" poe="0" model="PC" settings=" -simpc_ip 192.168.10.4  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.10.1  -simpc_mac 54-89-98-09-3E-2B  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-09-3E-2B" com_port="0" bootmode="0" cx="33.000000" cy="176.000000" edit_left="60" edit_top="230">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="412255D7-8E88-4d34-8613-00175A56ADFD" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-3E-67-13" com_port="2000" bootmode="0" cx="436.000000" cy="175.000000" edit_left="463" edit_top="229">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="A91789D7-3E42-46d7-829F-DEAF366035B3" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-F5-55-6A" com_port="2001" bootmode="0" cx="738.000000" cy="175.000000" edit_left="765" edit_top="229">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="412255D7-8E88-4d34-8613-00175A56ADFD" destDeviceID="A91789D7-3E42-46d7-829F-DEAF366035B3">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="506.183777" srcBoundRect_Y="202.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="721.816223" tarBoundRect_Y="202.000000" tarOffset_X="-45.000000" tarOffset_Y="3.000000" />
+        </line>
+        <line srcDeviceID="412255D7-8E88-4d34-8613-00175A56ADFD" destDeviceID="87782A70-1682-4f58-AA8F-486291C22B1E">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="419.821503" srcBoundRect_Y="201.325333" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="22" tarBoundRectIsMoved="0" tarBoundRect_X="314.178497" tarBoundRect_Y="199.674667" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="87782A70-1682-4f58-AA8F-486291C22B1E" destDeviceID="AB949E43-170A-4e1e-81D0-3C6EF10D2C5C">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="231.356155" srcBoundRect_Y="216.123169" srcOffset_X="-46.000000" srcOffset_Y="25.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="97.643852" tarBoundRect_Y="273.876831" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="87782A70-1682-4f58-AA8F-486291C22B1E" destDeviceID="137E44B2-B502-4be9-A40A-63A2C2EE6901">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="227.823990" srcBoundRect_Y="199.818497" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="103.176010" tarBoundRect_Y="202.181503" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="231" top="274" right="288" bottom="291" content="Private" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="613" top="281" right="662" bottom="298" content="Public" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="326" top="178" right="421" bottom="195" content="192.168.10.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="61" top="338" right="178" bottom="355" content="192.168.10.2/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="504" top="183" right="583" bottom="200" content="202.10.1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="646" top="219" right="748" bottom="236" content="202.10.1.2/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="410" top="136" right="520" bottom="168" content="23BSCYS006&#x0D;&#x0A;Muhammad Usman" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

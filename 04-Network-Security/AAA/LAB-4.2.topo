@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="07292583-B4CA-4d7b-87B2-72E2CA52FAA8" name="Cloud1" poe="0" model="Cloud" settings="" system_mac="" com_port="0" bootmode="0" cx="537.845032" cy="70.785004" edit_left="580" edit_top="155">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="0" />
+                <interface sztype="Serial" interfacename="Serial" count="0" />
+                <interfaceMap sztype="Ethernet" interfacename="Ethernet" displayNo="1" remoteDisplayNo="2" adapterUid="\Device\NPF_{0FDE9F71-2870-4D54-867E-0EFF4BC05BB4}" isOpen="1" udpPort="0" peerIPAdd="0.0.0.0" peerIP="0" peerPort="0" />
+                <interfaceMap sztype="Ethernet" interfacename="Ethernet" displayNo="2" remoteDisplayNo="1" adapterUid="" isOpen="0" udpPort="0" peerIPAdd="0.0.0.0" peerIP="0" peerPort="0" />
+            </slot>
+        </dev>
+        <dev id="68228CFC-E3A1-4ded-8A9A-7FD90071438D" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-9F-70-2F" com_port="2001" bootmode="0" cx="321.390015" cy="96.070007" edit_left="348" edit_top="150">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="68228CFC-E3A1-4ded-8A9A-7FD90071438D" destDeviceID="07292583-B4CA-4d7b-87B2-72E2CA52FAA8">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="391.143707" srcBoundRect_Y="121.140358" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="515.662781" tarBoundRect_Y="115.773155" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="528" top="179" right="653" bottom="211" content="ip 192.168.10.10&#x0D;&#x0A;Client" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="298" top="182" right="415" bottom="214" content="ip 192.168.10.1&#x0D;&#x0A;AAA server" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

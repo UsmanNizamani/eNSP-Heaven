@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="33F1E83F-E611-4167-BB00-62B887EB0948" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-9C-4C-EF" com_port="2001" bootmode="0" cx="679.000000" cy="116.000000" edit_left="706" edit_top="170">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+        <dev id="6A126FA1-8621-4c3b-AA22-B5073E2F5DDF" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-2F-03-63" com_port="2002" bootmode="0" cx="692.000000" cy="332.000000" edit_left="719" edit_top="386">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+        <dev id="A478E764-817A-4ccd-B802-27779A01892F" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-0B-7D-D2" com_port="2000" bootmode="0" cx="67.000000" cy="216.000000" edit_left="94" edit_top="270">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+        <dev id="2DB84482-40AA-4e5e-8F50-33CEAAE07E03" name="FRSW1" poe="0" model="FRSW" settings="1-101-2-201;1-102-3-301;" system_mac="" com_port="0" bootmode="0" cx="421.000000" cy="205.000000" edit_left="448" edit_top="259">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Serial" interfacename="Serial" count="16" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="A478E764-817A-4ccd-B802-27779A01892F" destDeviceID="2DB84482-40AA-4e5e-8F50-33CEAAE07E03">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="137.162933" srcBoundRect_Y="241.658783" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="404.837067" tarBoundRect_Y="233.341217" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="2DB84482-40AA-4e5e-8F50-33CEAAE07E03" destDeviceID="33F1E83F-E611-4167-BB00-62B887EB0948">
+            <interfacePair lineName="Serial" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="488.823090" srcBoundRect_Y="217.917618" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="3" tarBoundRectIsMoved="0" tarBoundRect_X="665.176941" tarBoundRect_Y="157.082382" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="2DB84482-40AA-4e5e-8F50-33CEAAE07E03" destDeviceID="6A126FA1-8621-4c3b-AA22-B5073E2F5DDF">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="487.102875" srcBoundRect_Y="250.324951" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="3" tarBoundRectIsMoved="0" tarBoundRect_X="679.897156" tarBoundRect_Y="340.675049" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>

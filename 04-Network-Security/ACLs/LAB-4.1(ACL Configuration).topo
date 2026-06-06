@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="69A8E47C-92B0-40e4-86CC-61DD1FDDE98C" name="R2" poe="0" model="Router" settings="" system_mac="54-89-98-96-47-BA" com_port="2001" bootmode="0" cx="213.000000" cy="91.000000" edit_left="240" edit_top="145">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="C35DE0B6-9472-4a40-8910-A0A260D129D0" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-14-78-E6" com_port="2000" bootmode="0" cx="79.000000" cy="262.000000" edit_left="106" edit_top="316">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="D131B4A7-DEBF-4d95-8608-F0E94904C4D6" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A3-0B-B8" com_port="2003" bootmode="0" cx="381.240051" cy="263.390015" edit_left="408" edit_top="317">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="C35DE0B6-9472-4a40-8910-A0A260D129D0" destDeviceID="69A8E47C-92B0-40e4-86CC-61DD1FDDE98C">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="132.635941" srcBoundRect_Y="255.009354" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="3" tarBoundRectIsMoved="0" tarBoundRect_X="213.364059" tarBoundRect_Y="151.990646" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="69A8E47C-92B0-40e4-86CC-61DD1FDDE98C" destDeviceID="D131B4A7-DEBF-4d95-8608-F0E94904C4D6">
+            <interfacePair lineName="Copper" srcIndex="4" srcBoundRectIsMoved="0" srcBoundRect_X="270.174194" srcBoundRect_Y="148.892639" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="2" tarBoundRectIsMoved="0" tarBoundRect_X="377.825806" tarBoundRect_Y="259.107361" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="48" top="336" right="392" bottom="384" content="Two Clients networks&#x0D;&#x0A;loopback0: 10.1.1.1 24 /Ping allowed via ACL&#x0D;&#x0A;loopback1: 10.1.4.1 24 /Ping Blocked" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="290" top="123" right="377" bottom="140" content="10.1.3.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="362" top="233" right="449" bottom="250" content="10.1.3.2/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="119" top="108" right="206" bottom="125" content="10.1.2.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="39" top="233" right="126" bottom="250" content="10.1.2.2/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
