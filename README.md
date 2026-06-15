@@ -1,3 +1,7 @@
+![Labs Count](https://img.shields.io/badge/Total%20Labs-46-brightgreen)
+![Platform](https://img.shields.io/badge/Platform-Huawei%20eNSP-red)
+![Status](https://img.shields.io/badge/Status-Completed-blue)
+
 # Network Engineering Practice Labs Portfolio
 
 Welcome to my Network Engineering showcase repository! This collection contains **46 hands-on practice labs** conducted using **Huawei eNSP (Enterprise Network Simulation Platform)**. This portfolio demonstrates a comprehensive range of networking skills, from core switching and routing to advanced firewall security and wireless implementations.
