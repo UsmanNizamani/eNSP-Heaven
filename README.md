@@ -4,7 +4,7 @@
 
 # Network Engineering Practice Labs Portfolio
 
-Welcome to my Network Engineering showcase repository! This collection contains **46 hands-on practice labs** conducted using **Huawei eNSP (Enterprise Network Simulation Platform)**. This portfolio demonstrates a comprehensive range of networking skills, from core switching and routing to advanced firewall security and wireless implementations.
+Welcome to my Network Engineering showcase repository! This collection contains **50+ hands-on practice labs** conducted using **Huawei eNSP (Enterprise Network Simulation Platform)**. This portfolio demonstrates a comprehensive range of networking skills, from core switching and routing to advanced firewall security and wireless implementations.
 
 ## 🚀 Repository Structure
 
