@@ -8,7 +8,7 @@ Welcome to my Network Engineering showcase repository! This collection contains 
 
 ## 🚀 Repository Structure
 
-The labs are organized into 6 core technology pillars, containing a total of 46 distinct projects:
+The labs are organized into 6 core technology pillars, containing a total of 50+ distinct projects:
 
 ### 1. [01-Fundamentals](./01-Fundamentals) (1 Lab)
 - **VRP Basics**: Initial device configuration and CLI navigation on Huawei's Versatile Routing Platform.
